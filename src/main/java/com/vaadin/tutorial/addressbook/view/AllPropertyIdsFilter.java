@@ -1,4 +1,4 @@
-package com.vaadin.tutorial.addressbook;
+package com.vaadin.tutorial.addressbook.view;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
@@ -9,10 +9,10 @@ import com.vaadin.data.Item;
  * A custom filter for searching names and companies in the
  * contactContainer.
  */
-final class ContactFilter implements Filter {
+final class AllPropertyIdsFilter implements Filter {
 	private String needle;
 
-	ContactFilter(final String needle) {
+	AllPropertyIdsFilter(final String needle) {
 		this.needle = checkNotNull(needle).toLowerCase();
 	}
 

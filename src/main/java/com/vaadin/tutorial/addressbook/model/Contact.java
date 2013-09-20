@@ -1,4 +1,4 @@
-package com.vaadin.tutorial.addressbook;
+package com.vaadin.tutorial.addressbook.model;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
