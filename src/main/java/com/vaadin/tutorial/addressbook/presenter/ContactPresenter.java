@@ -38,7 +38,7 @@ final class ContactPresenter implements ViewListener, Presenter {
 	public void onRemove(final Contact contact) {
 		model.remove(contact);
 		view.removeContact(contact);
-		view.select(model.getLast());
+		view.select(model.getFirst());
 	}
 
 	@Override

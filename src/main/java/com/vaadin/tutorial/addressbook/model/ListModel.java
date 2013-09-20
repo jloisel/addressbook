@@ -29,7 +29,7 @@ final class ListModel implements ContactModel {
 	}
 
 	@Override
-	public Contact getLast() {
-		return contacts.getLast();
+	public Contact getFirst() {
+		return contacts.getFirst();
 	}
 }

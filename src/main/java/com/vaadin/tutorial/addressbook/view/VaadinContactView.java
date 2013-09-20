@@ -209,6 +209,7 @@ final class VaadinContactView extends CustomComponent implements ContactView {
 			editorFields.setItemDataSource(table.getItem(itemId));
 		}
 		editorLayout.setVisible(itemId != null);
+		table.select(itemId);
 	}
 	
 	@Override

@@ -10,6 +10,5 @@ public interface ContactModel {
 
 	void remove(Contact contact);
 
-	Contact getLast();
-
+	Contact getFirst();
 }
