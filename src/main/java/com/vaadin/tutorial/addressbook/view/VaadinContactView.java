@@ -26,7 +26,7 @@ import com.vaadin.ui.Table;
 import com.vaadin.ui.TextField;
 import com.vaadin.ui.VerticalLayout;
 
-final class VaadinView extends CustomComponent implements ContactView {
+final class VaadinContactView extends CustomComponent implements ContactView {
 
 	/* User interface components are stored in session. */
 	private final Table table = new Table();
@@ -40,7 +40,7 @@ final class VaadinView extends CustomComponent implements ContactView {
 
 	private final Collection<ViewListener> listeners;
 	
-	VaadinView() {
+	VaadinContactView() {
 		super();
 		this.listeners = new HashSet<ViewListener>();
 		initLayout();
@@ -214,7 +214,7 @@ final class VaadinView extends CustomComponent implements ContactView {
 	@Override
 	public void filter(final String needle) {
 		container.removeAllContainerFilters();
-		container.addContainerFilter(new AllPropertyIdsFilter(needle));
+		container.addContainerFilter(new PropertyIdConcatFilter(needle));
 	}
 
 	@Override
