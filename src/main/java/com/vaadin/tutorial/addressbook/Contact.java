@@ -4,6 +4,9 @@ import static com.google.common.base.Preconditions.checkNotNull;
 
 import java.io.Serializable;
 
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+
 /**
  * Contact bean.
  * 
@@ -11,7 +14,12 @@ import java.io.Serializable;
  *
  */
 public final class Contact implements Serializable {
+	@NotNull
+	@Size(min = 1)
 	private String firstname;
+	
+	@NotNull
+	@Size(min = 1)
 	private String lastname;
 	
 	public Contact() {

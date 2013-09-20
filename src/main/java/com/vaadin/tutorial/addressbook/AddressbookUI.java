@@ -3,6 +3,7 @@ package com.vaadin.tutorial.addressbook;
 import com.vaadin.annotations.Title;
 import com.vaadin.data.Property;
 import com.vaadin.data.Property.ValueChangeEvent;
+import com.vaadin.data.fieldgroup.BeanFieldGroup;
 import com.vaadin.data.fieldgroup.FieldGroup;
 import com.vaadin.data.util.BeanItemContainer;
 import com.vaadin.event.FieldEvents.TextChangeEvent;
@@ -35,7 +36,7 @@ public class AddressbookUI extends UI {
 	private Button addNewContactButton = new Button("New");
 	private Button removeContactButton = new Button("Remove this contact");
 	private FormLayout editorLayout = new FormLayout();
-	private FieldGroup editorFields = new FieldGroup();
+	private FieldGroup editorFields = new BeanFieldGroup<Contact>(Contact.class);
 
 	/*
 	 * Any component can be bound to an external data source. This example uses
@@ -107,7 +108,8 @@ public class AddressbookUI extends UI {
 
 		/* User interface can be created dynamically to reflect underlying data. */
 		for (final String fieldName : contactContainer.getContainerPropertyIds()) {
-			TextField field = new TextField(fieldName);
+			final TextField field = new TextField(fieldName);
+			field.setValidationVisible(true);
 			editorLayout.addComponent(field);
 			field.setWidth("100%");
 
