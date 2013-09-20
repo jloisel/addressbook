@@ -7,11 +7,11 @@ import com.vaadin.tutorial.addressbook.model.ContactModel;
 import com.vaadin.tutorial.addressbook.view.ContactView;
 import com.vaadin.tutorial.addressbook.view.ViewListener;
 
-final class PresenterImpl implements ViewListener, Presenter {
+final class ContactPresenter implements ViewListener, Presenter {
 	private final ContactView view;
 	private final ContactModel model;
 
-	PresenterImpl(final ContactView view, final ContactModel model) {
+	ContactPresenter(final ContactView view, final ContactModel model) {
 		super();
 		this.view = checkNotNull(view);
 		this.model = checkNotNull(model);

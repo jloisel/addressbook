@@ -22,6 +22,6 @@ public class Models {
 			container.add(contact);
 		}
 		
-		return new Model(container);
+		return new ListModel(container);
 	}
 }

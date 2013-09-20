@@ -9,10 +9,10 @@ import com.vaadin.data.Item;
  * A custom filter for searching names and companies in the
  * contactContainer.
  */
-final class AllPropertyIdsFilter implements Filter {
+final class PropertyIdConcatFilter implements Filter {
 	private String needle;
 
-	AllPropertyIdsFilter(final String needle) {
+	PropertyIdConcatFilter(final String needle) {
 		this.needle = checkNotNull(needle).toLowerCase();
 	}
 

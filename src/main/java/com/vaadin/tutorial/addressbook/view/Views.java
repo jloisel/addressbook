@@ -7,6 +7,6 @@ public final class Views {
 	}
 	
 	public static ContactView newView() {
-		return new VaadinView();
+		return new VaadinContactView();
 	}
 }

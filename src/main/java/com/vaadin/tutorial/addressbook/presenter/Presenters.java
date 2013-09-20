@@ -10,6 +10,6 @@ public final class Presenters {
 	}
 	
 	public static Presenter newPresenter(final ContactView view, final ContactModel model) {
-		return new PresenterImpl(view, model);
+		return new ContactPresenter(view, model);
 	}
 }
