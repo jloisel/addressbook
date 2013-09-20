@@ -15,7 +15,7 @@ public class Models {
 	public static ContactModel newModel() {
 		final LinkedList<Contact> container = new LinkedList<Contact>();
 		
-		for (int i = 0; i < 1000; i++) {
+		for (int i = 0; i < 100; i++) {
 			final Contact contact = new Contact();
 			contact.setFirstname(FIRSTNAMES[(int) (FIRSTNAMES.length * Math.random())]);
 			contact.setLastname(LASTNAMES[(int) (LASTNAMES.length * Math.random())]);

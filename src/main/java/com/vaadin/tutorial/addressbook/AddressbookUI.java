@@ -10,11 +10,11 @@ import com.vaadin.tutorial.addressbook.view.ContactView;
 import com.vaadin.tutorial.addressbook.view.Views;
 import com.vaadin.ui.UI;
 
-/* 
- * UI class is the starting point for your app. You may deploy it with VaadinServlet
- * or VaadinPortlet by giving your UI class name a parameter. When you browse to your
- * app a web page showing your UI is automatically generated. Or you may choose to 
- * embed your UI to an existing web page. 
+/**
+ * Sample entry point class. See web.xml for declaration details.
+ * 
+ * @author jloisel
+ *
  */
 @Title("Addressbook")
 public final class AddressbookUI extends UI {

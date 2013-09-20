@@ -5,6 +5,12 @@ import static com.google.common.base.Preconditions.checkNotNull;
 import java.util.LinkedList;
 import java.util.List;
 
+/**
+ * Stores {@link Contact} instances in a {@link LinkedList}.
+ * 
+ * @author jloisel
+ *
+ */
 final class ListModel implements ContactModel {
 	private final LinkedList<Contact> contacts;
 	
